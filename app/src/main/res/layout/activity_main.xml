@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_main_select"
+        style="@style/TextViewDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:singleLine="true"
+        android:text="@string/select_file"
+        app:layout_constraintEnd_toStartOf="@+id/tv_main_limit_counter_label"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_main_select"
+        android:layout_width="128dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/ellipsis"
+        app:layout_constraintEnd_toEndOf="@+id/tv_main_select"
+        app:layout_constraintStart_toStartOf="@+id/tv_main_select"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main_select" />
+
+    <TextView
+        android:id="@+id/tv_main_limit_counter_label"
+        style="@style/TextViewDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/limit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@+id/tv_main_select"
+        app:layout_constraintTop_toTopOf="@+id/tv_main_select" />
+
+    <EditText
+        android:id="@+id/et_main_limit_counter"
+        android:layout_width="64dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/zero"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/tv_main_limit_counter_label"
+        app:layout_constraintStart_toStartOf="@+id/tv_main_limit_counter_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main_limit_counter_label" />
+
+    <TextView
+        android:id="@+id/tv_main_model"
+        style="@style/TextViewDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/model_info"
+        app:layout_constraintEnd_toEndOf="@+id/et_main_limit_counter"
+        app:layout_constraintStart_toStartOf="@+id/btn_main_select"
+        app:layout_constraintTop_toBottomOf="@+id/btn_main_select" />
+
+    <TextView
+        android:id="@+id/tv_main_total_label"
+        style="@style/TextViewDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total"
+        app:layout_constraintStart_toStartOf="@+id/btn_main_select"
+        app:layout_constraintTop_toTopOf="@+id/tv_main_total" />
+
+    <TextView
+        android:id="@+id/tv_main_min_label"
+        style="@style/TextViewDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/min"
+        app:layout_constraintStart_toStartOf="@+id/tv_main_total_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main_total_label" />
+
+    <TextView
+        android:id="@+id/tv_main_max_label"
+        style="@style/TextViewDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/max"
+        app:layout_constraintStart_toStartOf="@+id/tv_main_min_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main_min_label" />
+
+    <TextView
+        android:id="@+id/tv_main_more_than_limit_label"
+        style="@style/TextViewDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:singleLine="true"
+        android:text="@string/more_than_limit"
+        app:layout_constraintStart_toStartOf="@+id/tv_main_max_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main_max_label" />
+
+    <TextView
+        android:id="@+id/tv_main_total"
+        style="@style/TextViewDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="40dp"
+        android:maxWidth="150dp"
+        android:singleLine="true"
+        app:layout_constraintStart_toStartOf="@+id/tv_main_model"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main_model"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/tv_main_min"
+        style="@style/TextViewDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:singleLine="true"
+        app:layout_constraintStart_toStartOf="@+id/tv_main_total"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main_total"
+        android:maxWidth="150dp"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/tv_main_max"
+        style="@style/TextViewDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:singleLine="true"
+        app:layout_constraintStart_toStartOf="@+id/tv_main_min"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main_min"
+        android:maxWidth="150dp"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/tv_main_more_than_limit"
+        style="@style/TextViewDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:singleLine="true"
+        app:layout_constraintStart_toStartOf="@+id/tv_main_max"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main_max"
+        android:maxWidth="150dp"
+        tools:text="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

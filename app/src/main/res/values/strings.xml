@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Object Info</string>
+    <string name="select_file">Select File</string>
+    <string name="ellipsis">...</string>
+    <string name="limit">Limit</string>
+    <string name="zero">0</string>
+    <string name="model_info">Model Info</string>
+    <string name="total">Total</string>
+    <string name="min">Min</string>
+    <string name="max">Max</string>
+    <string name="more_than_limit"><![CDATA[>Limit]]></string>
+</resources>
